@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styles from '../styles/AboutMe.module.scss';
+import 'Aboutme.scss';
 
 const AboutMe = () => {
   const [scrollPercent, setScrollPercent] = useState(0);
@@ -24,10 +24,9 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div className={styles.aboutMe}>
-      <p id="aboutme" scrollPercent={scrollPercent} className={styles.about}>ABOUT ME</p>
-      {/* <p>{JSON.stringify(entry)}</p> */}
-      <p className={styles.description}>
+    <div className='aboutMe'>
+      <p scrollPercent={scrollPercent} className='about'>ABOUT ME</p>
+      <p className='description'>
         Front-end developer who deeply cares about User Experience.
         <br />
         Serious passion for UI design and new technologies.
@@ -35,7 +34,7 @@ const AboutMe = () => {
       <style jsx>
         {
           `
-          #aboutme{
+          .about{
             transform: translateX(${scrollPercent}%);
           }
         `
