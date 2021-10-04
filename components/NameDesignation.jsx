@@ -1,5 +1,3 @@
-import '../styles/NameDesignation.scss';
-
 const NameDesignation = () =>
 (
   <div className='intro'>
